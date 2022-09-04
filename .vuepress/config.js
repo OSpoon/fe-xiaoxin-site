@@ -36,7 +36,7 @@ module.exports = {
         "link": "/timeline/", 
         "icon": "reco-date" },
       {
-        "text": "联系",
+        "text": "关于",
         "icon": "reco-message",
         "items": [
           {
@@ -127,5 +127,22 @@ module.exports = {
     "lineNumbers": true,
     "anchor": { "permalink": false },
     "toc": { "includeLevel": [1, 2] },
-  }
+  },
+  "plugins": [
+    ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
+      "width": '300px', // 默认 260px
+      "title": '消息提示',
+      "body": [
+        {
+          "type": 'title',
+          "content": '初次见面加个好友吧 🎉🎉🎉',
+          "style": 'text-aligin: center;font-size: 15px;'
+        },
+        {
+          "type": 'image',
+          "src": '/wx_code.png'
+        }
+      ]
+    }]
+  ]
 }

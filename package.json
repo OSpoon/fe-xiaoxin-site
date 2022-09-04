@@ -7,8 +7,12 @@
     "build": "vuepress build ."
   },
   "devDependencies": {
+    "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.13",
     "vuepress": "1.8.2",
     "vuepress-theme-reco": "1.6.15"
   },
-  "description": "小鑫同学个人站点"
+  "description": "小鑫同学个人站点",
+  "dependencies": {
+    "ali-oss": "^6.17.1"
+  }
 }
