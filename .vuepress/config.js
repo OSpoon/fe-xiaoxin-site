@@ -34,7 +34,13 @@ module.exports = {
       { 
         "text": "时间轴", 
         "link": "/timeline/", 
-        "icon": "reco-date" },
+        "icon": "reco-date",
+      },
+      { 
+        "text": "必看", 
+        "link": "/myself/", 
+        "icon": "reco-other",
+      },
       {
         "text": "关于",
         "icon": "reco-message",

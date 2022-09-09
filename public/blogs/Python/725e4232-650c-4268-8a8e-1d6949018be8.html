@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Scrapy项目部署 |  小鑫同学</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="小鑫同学个人站点">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.0c723b3f.css" as="style"><link rel="preload" href="/assets/js/app.d92d9752.js" as="script"><link rel="preload" href="/assets/js/3.1199aef7.js" as="script"><link rel="preload" href="/assets/js/1.accea1c2.js" as="script"><link rel="preload" href="/assets/js/37.58604f3b.js" as="script"><link rel="prefetch" href="/assets/js/10.4527c0ed.js"><link rel="prefetch" href="/assets/js/11.643639aa.js"><link rel="prefetch" href="/assets/js/12.0987cf94.js"><link rel="prefetch" href="/assets/js/13.7c7b4cdc.js"><link rel="prefetch" href="/assets/js/14.830dac73.js"><link rel="prefetch" href="/assets/js/15.4e83758b.js"><link rel="prefetch" href="/assets/js/16.ee638542.js"><link rel="prefetch" href="/assets/js/17.956a2b0f.js"><link rel="prefetch" href="/assets/js/18.43f7e450.js"><link rel="prefetch" href="/assets/js/19.9e15bd7d.js"><link rel="prefetch" href="/assets/js/20.4565fee2.js"><link rel="prefetch" href="/assets/js/21.22503f0e.js"><link rel="prefetch" href="/assets/js/22.3ff481b9.js"><link rel="prefetch" href="/assets/js/23.024af296.js"><link rel="prefetch" href="/assets/js/24.57ab9572.js"><link rel="prefetch" href="/assets/js/25.5e2752bd.js"><link rel="prefetch" href="/assets/js/26.36146b7f.js"><link rel="prefetch" href="/assets/js/27.84c9664f.js"><link rel="prefetch" href="/assets/js/28.92f6c0ad.js"><link rel="prefetch" href="/assets/js/29.bd14cec2.js"><link rel="prefetch" href="/assets/js/30.46bbb509.js"><link rel="prefetch" href="/assets/js/31.a7c3e20e.js"><link rel="prefetch" href="/assets/js/32.ad0e473e.js"><link rel="prefetch" href="/assets/js/33.5352761b.js"><link rel="prefetch" href="/assets/js/34.365096d2.js"><link rel="prefetch" href="/assets/js/35.344049de.js"><link rel="prefetch" href="/assets/js/36.4018824b.js"><link rel="prefetch" href="/assets/js/38.e19512aa.js"><link rel="prefetch" href="/assets/js/39.c99544fb.js"><link rel="prefetch" href="/assets/js/4.8c0e4501.js"><link rel="prefetch" href="/assets/js/40.5605a564.js"><link rel="prefetch" href="/assets/js/41.673e9b07.js"><link rel="prefetch" href="/assets/js/42.5371a07c.js"><link rel="prefetch" href="/assets/js/43.0ab8cf86.js"><link rel="prefetch" href="/assets/js/44.ae14fc9d.js"><link rel="prefetch" href="/assets/js/45.42cc9555.js"><link rel="prefetch" href="/assets/js/46.58615341.js"><link rel="prefetch" href="/assets/js/47.03e65c94.js"><link rel="prefetch" href="/assets/js/48.e68177cb.js"><link rel="prefetch" href="/assets/js/49.c1653bce.js"><link rel="prefetch" href="/assets/js/5.dd8bbbe3.js"><link rel="prefetch" href="/assets/js/50.9d3c6a35.js"><link rel="prefetch" href="/assets/js/51.8921e659.js"><link rel="prefetch" href="/assets/js/52.096ff4ee.js"><link rel="prefetch" href="/assets/js/53.812c7b82.js"><link rel="prefetch" href="/assets/js/6.7696eb1b.js"><link rel="prefetch" href="/assets/js/7.5447d6b7.js"><link rel="prefetch" href="/assets/js/8.30f31836.js"><link rel="prefetch" href="/assets/js/9.fe128fac.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0c723b3f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-5bb33761><div data-v-5bb33761><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-5bb33761 data-v-5bb33761><h3 class="title" data-v-59e6cb88> 小鑫同学</h3> <p class="description" data-v-59e6cb88>小鑫同学个人站点</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>小鑫同学</span>
+          
+        <!---->
+        2022
+      </a></span></div></div> <div class="hide" data-v-5bb33761><header class="navbar" data-v-5bb33761><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt=" 小鑫同学" class="logo"> <span class="site-name"> 小鑫同学</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/公众号/" class="nav-link"><i class="undefined"></i>
+  公众号
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PNPM/" class="nav-link"><i class="undefined"></i>
+  PNPM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/weChat/" class="nav-link"><i class="undefined"></i>
+  weChat
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Rollup/" class="nav-link"><i class="undefined"></i>
+  Rollup
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Serverless/" class="nav-link"><i class="undefined"></i>
+  Serverless
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Babel/" class="nav-link"><i class="undefined"></i>
+  Babel
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uniapp/" class="nav-link"><i class="undefined"></i>
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uTools/" class="nav-link"><i class="undefined"></i>
+  uTools
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Android/" class="nav-link"><i class="undefined"></i>
+  Android
+</a></li><li class="dropdown-item"><!----> <a href="/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/DB/" class="nav-link"><i class="undefined"></i>
+  DB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Flutter/" class="nav-link"><i class="undefined"></i>
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Node/" class="nav-link"><i class="undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Python/" class="nav-link"><i class="undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/categories/TailwindCSS/" class="nav-link"><i class="undefined"></i>
+  TailwindCSS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/CodeSnippet/" class="nav-link"><i class="undefined"></i>
+  CodeSnippet
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/OSpoon" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-5bb33761></div> <aside class="sidebar" data-v-5bb33761><div class="personal-info-wrapper" data-v-1fad0c41 data-v-5bb33761><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    小鑫同学
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>46</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/公众号/" class="nav-link"><i class="undefined"></i>
+  公众号
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PNPM/" class="nav-link"><i class="undefined"></i>
+  PNPM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/weChat/" class="nav-link"><i class="undefined"></i>
+  weChat
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Rollup/" class="nav-link"><i class="undefined"></i>
+  Rollup
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Serverless/" class="nav-link"><i class="undefined"></i>
+  Serverless
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Babel/" class="nav-link"><i class="undefined"></i>
+  Babel
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uniapp/" class="nav-link"><i class="undefined"></i>
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uTools/" class="nav-link"><i class="undefined"></i>
+  uTools
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Android/" class="nav-link"><i class="undefined"></i>
+  Android
+</a></li><li class="dropdown-item"><!----> <a href="/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/DB/" class="nav-link"><i class="undefined"></i>
+  DB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Flutter/" class="nav-link"><i class="undefined"></i>
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Node/" class="nav-link"><i class="undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Python/" class="nav-link"><i class="undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/categories/TailwindCSS/" class="nav-link"><i class="undefined"></i>
+  TailwindCSS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/CodeSnippet/" class="nav-link"><i class="undefined"></i>
+  CodeSnippet
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/OSpoon" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-5bb33761><h3 class="title" data-v-59e6cb88>Scrapy项目部署</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>小鑫同学</span>
+          
+        <!---->
+        2022
+      </a></span></div></div> <div data-v-5bb33761><div data-v-5bb33761><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">Scrapy项目部署</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>小鑫同学</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2019/7/17</span></i> <i class="iconfont reco-eye" data-v-8a445198><span id="/blogs/Python/725e4232-650c-4268-8a8e-1d6949018be8.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-8a445198><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>Python</span><span class="tag-item" data-v-8a445198>Scrapy</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="scrapyd-doc">Scrapyd-DOC</h2> <p>[TOC]</p> <h3 id="安装">安装</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>pip  install  scrapyd
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="api">API</h3> <h4 id="daemonstatus-json">daemonstatus.json</h4> <h5 id="检查服务的负载状态">检查服务的负载状态</h5> <p>示例请求：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl http://localhost:6800/daemonstatus.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>响应示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{ &quot;status&quot;: &quot;ok&quot;, &quot;running&quot;: &quot;0&quot;, &quot;pending&quot;: &quot;0&quot;, &quot;finished&quot;: &quot;0&quot;, &quot;node_name&quot;: &quot;node-name&quot; }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="addversion-json">addversion.json</h4> <h5 id="将项目添加到项目中-如果项目不存在则创建项目">将项目添加到项目中，如果项目不存在则创建项目</h5> <p>参数：</p> <ul><li><code>project</code> （字符串，必填） - 项目名称</li> <li><code>version</code> （字符串，必填） - 项目版本</li> <li><code>egg</code> （file，required） - 包含项目代码的Python egg</li></ul> <p>示例请求：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl http://localhost:6800/addversion.json -F project=myproject -F version=r23 -F egg=@myproject.egg
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>响应示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{&quot;status&quot;: &quot;ok&quot;, &quot;spiders&quot;: 3}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="schedule-json">schedule.json</h4> <h5 id="运行爬虫返回作业id">运行爬虫返回作业ID</h5> <p>参数：</p> <ul><li><code>project</code> （字符串，必填） - 项目名称</li> <li><code>spider</code> （字符串，必填） - 蜘蛛名称</li> <li><code>setting</code> （字符串，可选） - 运行蜘蛛时使用的Scrapy设置</li> <li><code>jobid</code> （字符串，可选） - 用于标识作业的作业ID，覆盖默认生成的UUID</li> <li><code>_version</code> （string，optional） - 要使用的项目版本</li> <li>任何其他参数都作为spider参数传递</li></ul> <p>示例请求：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl http://localhost:6800/schedule.json -d project=myproject -d spider=somespider
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>响应示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{&quot;status&quot;: &quot;ok&quot;, &quot;jobid&quot;: &quot;6487ec79947edab326d6db28a2d86511e8247444&quot;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="cancel-json">cancel.json</h4> <h5 id="停止爬虫。如果作业处于待处理状态-则会将其删除。如果作业正在运行-它将被终止。">停止爬虫。如果作业处于待处理状态，则会将其删除。如果作业正在运行，它将被终止。</h5> <p>参数：</p> <ul><li><code>project</code> （字符串，必填） - 项目名称</li> <li><code>job</code> （字符串，必填） - 作业ID</li></ul> <p>示例请求：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl http://localhost:6800/cancel.json -d project=myproject -d job=6487ec79947edab326d6db28a2d86511e8247444
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>响应示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{&quot;status&quot;: &quot;ok&quot;, &quot;prevstate&quot;: &quot;running&quot;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="listprojects-json">listprojects.json</h4> <h5 id="获取上传到此scrapy服务器的项目列表">获取上传到此Scrapy服务器的项目列表</h5> <p>示例请求：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl http://localhost:6800/listprojects.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>响应示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{&quot;status&quot;: &quot;ok&quot;, &quot;projects&quot;: [&quot;myproject&quot;, &quot;otherproject&quot;]}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="listversions-json">listversions.json</h4> <h5 id="获取某些项目可用的版本列表。版本按顺序返回-最后一个版本是当前使用的版本">获取某些项目可用的版本列表。版本按顺序返回，最后一个版本是当前使用的版本</h5> <p>参数：</p> <ul><li><code>project</code> （字符串，必填） - 项目名称</li></ul> <p>示例请求：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl http://localhost:6800/listversions.json?project=myproject
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>响应示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{&quot;status&quot;: &quot;ok&quot;, &quot;versions&quot;: [&quot;r99&quot;, &quot;r156&quot;]}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="listspiders-json">listspiders.json</h4> <h5 id="获取某个项目的最后一个-除非被覆盖-版本中可用的蜘蛛列表">获取某个项目的最后一个（除非被覆盖）版本中可用的蜘蛛列表</h5> <p>参数：</p> <ul><li><code>project</code> （字符串，必填） - 项目名称</li> <li><code>_version</code> （string，optional） - 要检查的项目的版本</li></ul> <p>示例请求：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl http://localhost:6800/listspiders.json?project=myproject
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>响应示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{&quot;status&quot;: &quot;ok&quot;, &quot;spiders&quot;: [&quot;spider1&quot;, &quot;spider2&quot;, &quot;spider3&quot;]}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="listjobs-json">listjobs.json</h4> <h5 id="获取某个项目的待处理-正在运行和已完成的作业列表">获取某个项目的待处理，正在运行和已完成的作业列表</h5> <p>参数：</p> <ul><li><code>project</code> （字符串，选项） - 将结果限制为项目名称</li></ul> <p>示例请求：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl http://localhost:6800/listjobs.json?project=myproject | python -m json.tool
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>响应示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;status&quot;: &quot;ok&quot;,
+    &quot;pending&quot;: [
+        {
+            &quot;project&quot;: &quot;myproject&quot;, &quot;spider&quot;: &quot;spider1&quot;,
+            &quot;id&quot;: &quot;78391cc0fcaf11e1b0090800272a6d06&quot;
+        }
+    ],
+    &quot;running&quot;: [
+        {
+            &quot;id&quot;: &quot;422e608f9f28cef127b3d5ef93fe9399&quot;,
+            &quot;project&quot;: &quot;myproject&quot;, &quot;spider&quot;: &quot;spider2&quot;,
+            &quot;start_time&quot;: &quot;2012-09-12 10:14:03.594664&quot;
+        }
+    ],
+    &quot;finished&quot;: [
+        {
+            &quot;id&quot;: &quot;2f16646cfcaf11e1b0090800272a6d06&quot;,
+            &quot;project&quot;: &quot;myproject&quot;, &quot;spider&quot;: &quot;spider3&quot;,
+            &quot;start_time&quot;: &quot;2012-09-12 10:14:03.594664&quot;,
+            &quot;end_time&quot;: &quot;2012-09-12 10:24:03.594664&quot;
+        }
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h4 id="delversion-json">delversion.json</h4> <h5 id="删除项目版本。如果给定项目没有更多可用版本-则该项目也将被删除">删除项目版本。如果给定项目没有更多可用版本，则该项目也将被删除</h5> <p>参数：</p> <ul><li><code>project</code> （字符串，必填） - 项目名称</li> <li><code>version</code> （字符串，必填） - 项目版本</li></ul> <p>示例请求：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl http://localhost:6800/delversion.json -d project=myproject -d version=r99
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>响应示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{&quot;status&quot;: &quot;ok&quot;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="delproject-json">delproject.json</h4> <h5 id="删除项目及其所有上载的版本">删除项目及其所有上载的版本</h5> <p>参数：</p> <ul><li><code>project</code> （字符串，必填） - 项目名称</li></ul> <p>示例请求：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl http://localhost:6800/delproject.json -d project=myproject
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>响应示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{&quot;status&quot;: &quot;ok&quot;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="配置文件">配置文件</h3> <h5 id="scrapyd在以下位置搜索配置文件-并按顺序解析它们-最新的配置文件具有更高的优先级">Scrapyd在以下位置搜索配置文件，并按顺序解析它们，最新的配置文件具有更高的优先级：</h5> <ul><li><code>/etc/scrapyd/scrapyd.conf</code> （UNIX）</li> <li><code>c:\scrapyd\scrapyd.conf</code> （视窗）</li> <li><code>/etc/scrapyd/conf.d/*</code> （按字母顺序排列，Unix）</li> <li><code>scrapyd.conf</code></li> <li><code>~/.scrapyd.conf</code> （用户主目录）</li></ul> <h5 id="配置文件支持以下选项-请参阅示例中的默认值-。">配置文件支持以下选项（请参阅<a href="https://scrapyd.readthedocs.io/en/latest/config.html#config-example" target="_blank" rel="noopener noreferrer">示例中的<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>默认值）。</h5> <h6 id="http-port">HTTP_PORT</h6> <p>HTTP JSON API将侦听的TCP端口。默认为<code>6800</code>。</p> <h6 id="bind-address">bind_address</h6> <p>网站和json webservices将侦听的IP地址。默认为<code>127.0.0.1</code>（localhost）</p> <h6 id="max-proc">max_proc</h6> <p>将启动的最大并发Scrapy进程数。如果未设置或<code>0</code>将使用系统中可用的cpus数乘以<code>max_proc_per_cpu</code>选项中的值。默认为<code>0</code>。</p> <h6 id="max-proc-per-cpu">max_proc_per_cpu</h6> <p>每个cpu将启动的最大并发Scrapy进程数。默认为<code>4</code>。</p> <h6 id="调试">调试</h6> <p>是否启用调试模式。默认为<code>off</code>。启用调试模式时，如果处理JSON API调用时出错，则将返回完整的Python回溯（作为纯文本响应）。</p> <h6 id="eggs-dir">eggs_dir</h6> <p>将存储项目egg的目录。</p> <h6 id="dbs-dir">dbs_dir</h6> <p>将存储项目数据库的目录（包括蜘蛛队列）。</p> <h6 id="logs-dir">logs_dir</h6> <p>将存储Scrapy日志的目录。如果要禁用存储日志，请将此选项设置为空，如下所示：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>logs_dir  =
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h6 id="items-dir">items_dir</h6> <p>0.15版本的新功能。</p> <p>将存储Scrapy项目的目录。默认情况下禁用此选项，因为您需要使用数据库或源导出程序。将其设置为非空会导致通过覆盖scrapy设置将已删除的项目源存储到指定的目录<code>FEED_URI</code>。</p> <h6 id="jobs-to-keep">jobs_to_keep</h6> <p>0.15版本的新功能。</p> <p>每个蜘蛛保留的已完成作业数。默认为<code>5</code>。这指的是日志和项目。</p> <p>此设置<code>logs_to_keep</code>在以前的版本中命名。</p> <h6 id="finished-to-keep">finished_to_keep</h6> <p>版本0.14中的新功能。</p> <p>要在启动器中保留的已完成进程数。默认为<code>100</code>。这仅反映在网站/作业端点和相关的json webservices上。</p> <h6 id="poll-interval">POLL_INTERVAL</h6> <p>用于轮询队列的间隔，以秒为单位。默认为<code>5.0</code>。可以是浮点数，如<code>0.2</code></p> <h2 id="scrapyd-client">Scrapyd-Client</h2> <h3 id="安装-2">安装：</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>pip install scrapyd-client
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="运行">运行</h3> <ol><li><p>将 <strong>scrapyd-deploy</strong> 拷贝到scrapy项目于scrapy.cfg同级</p></li> <li><p>修改scrapy.cfg内容</p></li> <li><div class="language- line-numbers-mode"><pre class="language-text"><code>[settings]
+default = cnblogSpider.settings
+
+[deploy:100]
+url = http://localhost:6800/
+project = cnblogSpider
+
+username = admin
+password = admin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li> <li><p>启动</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>scrapyd
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>发布</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>scrapyd-deploy &lt;deploy名称&gt; -p &lt;项目名称&gt; -v &lt;版本号&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>运行</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl http://127.0.0.1:6800/schedule.json -d project=cnblogSpider -d spider=anjuke
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ol></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2022/9/4 10:03:11</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-ac050c62></ul></main></div> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----></div></div>
+    <script src="/assets/js/app.d92d9752.js" defer></script><script src="/assets/js/3.1199aef7.js" defer></script><script src="/assets/js/1.accea1c2.js" defer></script><script src="/assets/js/37.58604f3b.js" defer></script>
+  </body>
+</html>

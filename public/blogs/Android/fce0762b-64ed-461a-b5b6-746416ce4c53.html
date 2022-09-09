@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cordova插件开发及使用 |  小鑫同学</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="小鑫同学个人站点">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.0c723b3f.css" as="style"><link rel="preload" href="/assets/js/app.d92d9752.js" as="script"><link rel="preload" href="/assets/js/3.1199aef7.js" as="script"><link rel="preload" href="/assets/js/1.accea1c2.js" as="script"><link rel="preload" href="/assets/js/22.3ff481b9.js" as="script"><link rel="prefetch" href="/assets/js/10.4527c0ed.js"><link rel="prefetch" href="/assets/js/11.643639aa.js"><link rel="prefetch" href="/assets/js/12.0987cf94.js"><link rel="prefetch" href="/assets/js/13.7c7b4cdc.js"><link rel="prefetch" href="/assets/js/14.830dac73.js"><link rel="prefetch" href="/assets/js/15.4e83758b.js"><link rel="prefetch" href="/assets/js/16.ee638542.js"><link rel="prefetch" href="/assets/js/17.956a2b0f.js"><link rel="prefetch" href="/assets/js/18.43f7e450.js"><link rel="prefetch" href="/assets/js/19.9e15bd7d.js"><link rel="prefetch" href="/assets/js/20.4565fee2.js"><link rel="prefetch" href="/assets/js/21.22503f0e.js"><link rel="prefetch" href="/assets/js/23.024af296.js"><link rel="prefetch" href="/assets/js/24.57ab9572.js"><link rel="prefetch" href="/assets/js/25.5e2752bd.js"><link rel="prefetch" href="/assets/js/26.36146b7f.js"><link rel="prefetch" href="/assets/js/27.84c9664f.js"><link rel="prefetch" href="/assets/js/28.92f6c0ad.js"><link rel="prefetch" href="/assets/js/29.bd14cec2.js"><link rel="prefetch" href="/assets/js/30.46bbb509.js"><link rel="prefetch" href="/assets/js/31.a7c3e20e.js"><link rel="prefetch" href="/assets/js/32.ad0e473e.js"><link rel="prefetch" href="/assets/js/33.5352761b.js"><link rel="prefetch" href="/assets/js/34.365096d2.js"><link rel="prefetch" href="/assets/js/35.344049de.js"><link rel="prefetch" href="/assets/js/36.4018824b.js"><link rel="prefetch" href="/assets/js/37.58604f3b.js"><link rel="prefetch" href="/assets/js/38.e19512aa.js"><link rel="prefetch" href="/assets/js/39.c99544fb.js"><link rel="prefetch" href="/assets/js/4.8c0e4501.js"><link rel="prefetch" href="/assets/js/40.5605a564.js"><link rel="prefetch" href="/assets/js/41.673e9b07.js"><link rel="prefetch" href="/assets/js/42.5371a07c.js"><link rel="prefetch" href="/assets/js/43.0ab8cf86.js"><link rel="prefetch" href="/assets/js/44.ae14fc9d.js"><link rel="prefetch" href="/assets/js/45.42cc9555.js"><link rel="prefetch" href="/assets/js/46.58615341.js"><link rel="prefetch" href="/assets/js/47.03e65c94.js"><link rel="prefetch" href="/assets/js/48.e68177cb.js"><link rel="prefetch" href="/assets/js/49.c1653bce.js"><link rel="prefetch" href="/assets/js/5.dd8bbbe3.js"><link rel="prefetch" href="/assets/js/50.9d3c6a35.js"><link rel="prefetch" href="/assets/js/51.8921e659.js"><link rel="prefetch" href="/assets/js/52.096ff4ee.js"><link rel="prefetch" href="/assets/js/53.812c7b82.js"><link rel="prefetch" href="/assets/js/6.7696eb1b.js"><link rel="prefetch" href="/assets/js/7.5447d6b7.js"><link rel="prefetch" href="/assets/js/8.30f31836.js"><link rel="prefetch" href="/assets/js/9.fe128fac.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0c723b3f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-5bb33761><div data-v-5bb33761><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-5bb33761 data-v-5bb33761><h3 class="title" data-v-59e6cb88> 小鑫同学</h3> <p class="description" data-v-59e6cb88>小鑫同学个人站点</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>小鑫同学</span>
+          
+        <!---->
+        2022
+      </a></span></div></div> <div class="hide" data-v-5bb33761><header class="navbar" data-v-5bb33761><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt=" 小鑫同学" class="logo"> <span class="site-name"> 小鑫同学</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/公众号/" class="nav-link"><i class="undefined"></i>
+  公众号
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PNPM/" class="nav-link"><i class="undefined"></i>
+  PNPM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/weChat/" class="nav-link"><i class="undefined"></i>
+  weChat
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Rollup/" class="nav-link"><i class="undefined"></i>
+  Rollup
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Serverless/" class="nav-link"><i class="undefined"></i>
+  Serverless
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Babel/" class="nav-link"><i class="undefined"></i>
+  Babel
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uniapp/" class="nav-link"><i class="undefined"></i>
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uTools/" class="nav-link"><i class="undefined"></i>
+  uTools
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Android/" class="nav-link"><i class="undefined"></i>
+  Android
+</a></li><li class="dropdown-item"><!----> <a href="/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/DB/" class="nav-link"><i class="undefined"></i>
+  DB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Flutter/" class="nav-link"><i class="undefined"></i>
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Node/" class="nav-link"><i class="undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Python/" class="nav-link"><i class="undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/categories/TailwindCSS/" class="nav-link"><i class="undefined"></i>
+  TailwindCSS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/CodeSnippet/" class="nav-link"><i class="undefined"></i>
+  CodeSnippet
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/OSpoon" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-5bb33761></div> <aside class="sidebar" data-v-5bb33761><div class="personal-info-wrapper" data-v-1fad0c41 data-v-5bb33761><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    小鑫同学
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>46</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/公众号/" class="nav-link"><i class="undefined"></i>
+  公众号
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PNPM/" class="nav-link"><i class="undefined"></i>
+  PNPM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/weChat/" class="nav-link"><i class="undefined"></i>
+  weChat
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Rollup/" class="nav-link"><i class="undefined"></i>
+  Rollup
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Serverless/" class="nav-link"><i class="undefined"></i>
+  Serverless
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Babel/" class="nav-link"><i class="undefined"></i>
+  Babel
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uniapp/" class="nav-link"><i class="undefined"></i>
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uTools/" class="nav-link"><i class="undefined"></i>
+  uTools
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Android/" class="nav-link"><i class="undefined"></i>
+  Android
+</a></li><li class="dropdown-item"><!----> <a href="/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/DB/" class="nav-link"><i class="undefined"></i>
+  DB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Flutter/" class="nav-link"><i class="undefined"></i>
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Node/" class="nav-link"><i class="undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Python/" class="nav-link"><i class="undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/categories/TailwindCSS/" class="nav-link"><i class="undefined"></i>
+  TailwindCSS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/CodeSnippet/" class="nav-link"><i class="undefined"></i>
+  CodeSnippet
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/OSpoon" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-5bb33761><h3 class="title" data-v-59e6cb88>Cordova插件开发及使用</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>小鑫同学</span>
+          
+        <!---->
+        2022
+      </a></span></div></div> <div data-v-5bb33761><div data-v-5bb33761><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">Cordova插件开发及使用</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>小鑫同学</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2019/7/16</span></i> <i class="iconfont reco-eye" data-v-8a445198><span id="/blogs/Android/fce0762b-64ed-461a-b5b6-746416ce4c53.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-8a445198><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>Cordova</span></i></div></div> <div class="theme-reco-content content__default"><h4 id="一、cordova插件开发">一、Cordova插件开发</h4> <h5 id="_1-安装plugman">1.安装plugman</h5> <div class="language- extra-class"><pre><code>npm install -g plugman
+</code></pre></div><h5 id="_2-创建插件">2.创建插件</h5> <div class="language- extra-class"><pre><code>plugman create --name CorePlugin --plugin_id cordova-plugin-n22-CorePlugin --plugin_version 1.0.0
+</code></pre></div><h5 id="_3-移植原生代码">3.移植原生代码</h5> <div class="language- extra-class"><pre><code>移植原生代码(插件部分及关联文件)到src下的android目录
+</code></pre></div><h6 id="示例一-coreplugin-java-主要用于解析hybridstr-应用反射执行具体插件功能">示例一 CorePlugin.java (主要用于解析hybridStr,应用反射执行具体插件功能)</h6> <div class="language- extra-class"><pre><code>package org.apache.cordova.n22;
+
+import java.util.HashMap;
+import java.util.Map;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaInterface;
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CordovaWebView;
+import org.json.JSONArray;
+import org.json.JSONException;
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+
+public class CorePlugin extends CordovaPlugin {
+
+	private Activity activity;
+    private CordovaWebView webView;
+
+    public CorePlugin() {
+    }
+
+    @Override
+    public void initialize(CordovaInterface cordova, CordovaWebView webView) {
+        super.initialize(cordova, webView);
+        this.activity = cordova.getActivity();
+        this.webView = webView;
+    }
+
+    @SuppressLint(&quot;NewApi&quot;)
+	@Override
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        if (&quot;callNative&quot;.equals(action)) {
+        	System.out.println(&quot;callNative&quot;+action);
+        	Map&lt;String, Object&gt; paramMap = parseProtocol((String) args.get(0));
+        	String protocolType = (String) paramMap.get(&quot;type&quot;),
+        			name =(String) paramMap.get(&quot;nameId&quot;),
+        			methodAction =(String) paramMap.get(&quot;method&quot;),
+        			parameterStr =(String) paramMap.get(&quot;parm&quot;);
+        	if(name.indexOf(&quot;:&quot;)!=-1)
+        	{
+        		name = name.substring(0,name.indexOf(&quot;:&quot;));
+        	}
+        	System.out.println(paramMap);
+        	try {
+				Object test;
+				test = ReflectUtil.invokeMethod(Class.forName(activity.getPackageName()+&quot;.plugin.&quot;+name).newInstance(),methodAction, new Class&lt;?&gt;[] { CallbackContext.class,Context.class, String.class },
+				     new Object[] { callbackContext,activity, parameterStr });
+				System.out.println(test);
+			} catch (InstantiationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				callbackContext.error(&quot;调用原生反射错误&quot;);
+			} catch (IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				callbackContext.error(&quot;调用原生反射错误&quot;);
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				callbackContext.error(&quot;调用原生反射错误&quot;);
+			}
+            return true;
+        }
+        return false;
+    }
+    
+    public static Map&lt;String, Object&gt; parseProtocol(String parmStr) {
+		String protocolType = null,name = null,methodAction = null,parameterStr = null;
+		String parmIn = new String(parmStr);
+		if(parmIn.indexOf(&quot;hybrid://&quot;)!=-1)
+		{
+			protocolType = &quot;hybrid&quot;;
+			parmIn = parmIn.replace(&quot;hybrid://&quot;, &quot;&quot;);
+			name = parmIn.substring(0, parmIn.indexOf(&quot;/&quot;));
+			if(parmIn.indexOf(&quot;?&quot;)!=-1){
+				methodAction = parmIn.substring(parmIn.indexOf(&quot;/&quot;)+1,parmIn.indexOf(&quot;?&quot;));
+			}else{
+				methodAction = parmIn.substring(parmIn.indexOf(&quot;/&quot;)+1,parmIn.length());
+			}
+			
+			parameterStr = parmIn.substring(parmIn.indexOf(&quot;?&quot;)+1,parmIn.length());
+		}
+		Map&lt;String, Object&gt; res = new HashMap&lt;String, Object&gt;();
+		res.put(&quot;type&quot;, protocolType);
+		res.put(&quot;nameId&quot;, name);
+		res.put(&quot;method&quot;, methodAction);
+		res.put(&quot;parm&quot;, parameterStr);
+		
+		return res;
+	}
+    
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+    	// TODO Auto-generated method stub
+    	super.onActivityResult(requestCode, resultCode, intent);
+    	System.out.println(&quot;进入返回&quot;);
+    }
+}
+</code></pre></div><h6 id="示例二-reflectutil-java-为配合coreplugin使用的反射操作类">示例二 ReflectUtil.java (为配合CorePlugin使用的反射操作类)</h6> <div class="language- extra-class"><pre><code>package org.apache.cordova.n22;
+
+import android.annotation.SuppressLint;
+import android.util.ArrayMap;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * 反射工具类
+ *
+ * @author yangzhilei
+ */
+@SuppressLint(&quot;NewApi&quot;)
+public class ReflectUtil {
+
+	public static final String FULL_DATE_PATTERN = &quot;yyyy-MM-dd HH:mm:ss&quot;;
+	public static final String DATE_PATTERN_MINUTE = &quot;yyyy-MM-dd HH:mm&quot;;
+	public static final String DEFAULT_DATE_PATTERN = &quot;yyyy-MM-dd&quot;;
+
+	static final String[] tryParttern = new String[] { FULL_DATE_PATTERN, DATE_PATTERN_MINUTE, DEFAULT_DATE_PATTERN };
+
+	public static Object newInstance(String className, Object... params) {
+		try {
+			Class&lt;?&gt; cls = Class.forName(className);
+			return newInstance(cls, params);
+		} catch (Exception e) {
+			System.out.println(e);
+			return null;
+		}
+	}
+
+	public static Object newInstance(Class&lt;?&gt; cls, Object... params) {
+		Class&lt;?&gt;[] parameterTypes = null;
+		if (params != null) {
+			parameterTypes = new Class&lt;?&gt;[params.length];
+			for (int i = 0; i &lt; params.length; i++) {
+				parameterTypes[i] = params[i].getClass();
+			}
+		}
+		return newInstance(cls, parameterTypes, params);
+	}
+
+	/**
+	 * 实例化对象
+	 */
+	public static Object newInstance(Class&lt;?&gt; cls, Class&lt;?&gt;[] parameterTypes, Object[] params) {
+		Object result = null;
+		try {
+			Constructor&lt;?&gt; constructor = getConstructor(cls, parameterTypes);
+			result = constructor.newInstance(params);
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return result;
+	}
+
+	/**
+	 * 获取Constructor
+	 */
+	public static Constructor&lt;?&gt; getConstructor(Class&lt;?&gt; cls, Class&lt;?&gt;[] parameterTypes) throws Exception {
+		Constructor&lt;?&gt; constructor = null;
+		try {
+			constructor = cls.getDeclaredConstructor(parameterTypes);
+		} catch (Exception e) {
+			constructor = cls.getConstructor(parameterTypes);
+		}
+		return constructor;
+	}
+
+	public static Object invokeMethod(Object obj, String methodName, Object... params) {
+		Class&lt;?&gt;[] parameterTypes = null;
+		if (params != null) {
+			parameterTypes = new Class&lt;?&gt;[params.length];
+			for (int i = 0; i &lt; params.length; i++) {
+				parameterTypes[i] = params[i].getClass();
+			}
+		}
+		return invokeMethod(obj, methodName, parameterTypes, params);
+	}
+
+	/**
+	 * 反射调用方法
+	 */
+	public static Object invokeMethod(Object obj, String methodName, Class&lt;?&gt;[] parameterTypes, Object[] params) {
+		Class&lt;?&gt; cls = null;
+		if (obj instanceof Class&lt;?&gt;) {
+			cls = (Class&lt;?&gt;) obj;
+		} else {
+			cls = obj.getClass();
+		}
+		Object result = null;
+		try {
+			Method method = getMethod(cls, methodName, parameterTypes);
+			method.setAccessible(true);
+			result = method.invoke(obj, params);
+		} catch (Exception e) {
+			System.out.println(e);
+			System.out.println(&quot;invoke method:&quot; + methodName + &quot;failed&quot;);
+		}
+		return result;
+	}
+
+	/**
+	 * 获取Method
+	 */
+	public static Method getMethod(Class&lt;?&gt; cls, String methodName, Class&lt;?&gt;[] parameterTypes) throws Exception {
+		Method method = null;
+		try {
+			method = cls.getDeclaredMethod(methodName, parameterTypes);
+		} catch (Exception e) {
+			method = cls.getMethod(methodName, parameterTypes);
+		}
+		return method;
+	}
+
+	/**
+	 * 获取class对应所有字段
+	 */
+	public static Field[] getFields(Class&lt;?&gt; cls) {
+		Field[] result = cls.getDeclaredFields();
+		if (result != null) {
+			return result;
+		}
+		return new Field[] {};
+	}
+
+	/**
+	 * 获取field属性值
+	 */
+	public static Object getFieldValue(Object target, Field field) {
+		if (!field.isAccessible()) {
+			field.setAccessible(true);
+		}
+		try {
+			return field.get(target);
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return null;
+	}
+
+	/**
+	 * 获取field属性值
+	 */
+	public static Object getFieldValue(Object target, String fieldName) {
+		try {
+			Field field = target.getClass().getDeclaredField(fieldName);
+			return getFieldValue(target, field);
+		} catch (Exception e) {
+			System.out.println(e);
+			return null;
+		}
+	}
+
+	/**
+	 * 设置field属性值
+	 */
+	public static boolean setFieldValue(Object target, Field field, Object value) {
+		if (!field.isAccessible()) {
+			field.setAccessible(true);
+		}
+		try {
+			Object result = null;
+			if (value != null) {
+				Class&lt;?&gt; type = field.getType();
+				if (type.equals(value.getClass()) || type.isAssignableFrom(value.getClass())) {
+					result = value;
+				} else {
+					if (String.class.equals(type)) {
+						result = String.valueOf(value);
+					} else if (Integer.class.equals(type) || int.class.equals(type)) {
+						result = Double.valueOf(value + &quot;&quot;).intValue();
+					} else if (Double.class.equals(type) || double.class.equals(type)) {
+						result = Double.valueOf(value + &quot;&quot;);
+					} else if (Float.class.equals(type) || float.class.equals(type)) {
+						result = Double.valueOf(value + &quot;&quot;).floatValue();
+					} else if (Long.class.equals(type) || long.class.equals(type)) {
+						result = Double.valueOf(value + &quot;&quot;).longValue();
+					} else if (Date.class.equals(type)) {
+						result = getDate(value + &quot;&quot;);
+					} else if (BigDecimal.class.equals(type)) {
+						result = new BigDecimal(value + &quot;&quot;);
+					}
+				}
+			}
+			field.set(target, result);
+			return true;
+		} catch (Exception e) {
+			System.out.println(e);
+			return false;
+		}
+	}
+
+	/**
+	 * String转Date，尝试tryParttern中的各种格式
+	 */
+	public static Date getDate(String dateStr) {
+		Date date = null;
+		SimpleDateFormat sf = new SimpleDateFormat();
+		for (int i = 0; i &lt; tryParttern.length; i++) {
+			sf.applyPattern(tryParttern[i]);
+			try {
+				date = sf.parse(dateStr);
+			} catch (Exception e) {
+
+			}
+			if (date != null) {
+				return date;
+			}
+		}
+		if (date == null) {
+			System.out.println(&quot;trans date failed, dateStr : &quot; + dateStr);
+		}
+		return date;
+	}
+
+	/**
+	 * map 映射到 Object，对象必须有默认无参构造,对象中不支持map字段
+	 *
+	 * @return
+	 */
+	@SuppressWarnings(&quot;unchecked&quot;)
+	public static &lt;T&gt; T mapToObject(Class&lt;T&gt; cls, Map&lt;?, ?&gt; map) {
+		T obj = (T) ReflectUtil.newInstance(cls);
+		if (obj != null) {
+			Field[] fields = getFields(cls);
+			for (Field f : fields) {
+				if (isSkip(f)) {
+					continue;
+				}
+				f.setAccessible(true);
+				String name = f.getName();
+				Object value = map.get(name);
+				if (value != null) {
+					if (isBaseType(f)) {// 基础类型
+						setFieldValue(obj, f, value);
+					} else if (f.getType().isAssignableFrom(value.getClass())) {// value与字段类型一致
+						// List集合,必须有泛型
+						if (List.class.isAssignableFrom(f.getType())) {
+							List&lt;Object&gt; list = (List&lt;Object&gt;) value;
+							transMapListToObjList(list, f);
+						}
+						setFieldValue(obj, f, value);
+					} else if (Map.class.isAssignableFrom(value.getClass())) {// value为map类型，需要进行映射
+						setFieldValue(obj, f, mapToObject(f.getType(), (Map&lt;?, ?&gt;) value));
+					}
+				}
+			}
+		}
+		return obj;
+	}
+
+	static void transMapListToObjList(List&lt;Object&gt; list, Field f) {
+		Type fc = f.getGenericType();
+		if (fc == null) {
+			return;
+		}
+		Class&lt;?&gt; parameterizedType = getParameterizedType(fc);
+		if (parameterizedType != null) {
+			for (int i = 0; i &lt; list.size(); i++) {
+				Object obj = list.get(i);
+				if (parameterizedType.isAssignableFrom(obj.getClass())) {
+					continue;
+				} else if (Map.class.isAssignableFrom(obj.getClass())) {
+					list.set(i, mapToObject(parameterizedType, (Map&lt;?, ?&gt;) obj));
+				}
+			}
+		}
+	}
+
+	public static Class&lt;?&gt; getParameterizedType(Type type) {
+		if (type instanceof ParameterizedType) {
+			try {
+				Class&lt;?&gt; pType = (Class&lt;?&gt;) ((ParameterizedType) type).getActualTypeArguments()[0];
+				return pType;
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+		}
+		return null;
+	}
+
+	static boolean isSkip(Field f) {
+		int modifiers = f.getModifiers();
+		// 过滤final static transient修饰的字段
+		if (Modifier.isFinal(modifiers) || Modifier.isStatic(modifiers) || Modifier.isTransient(modifiers)) {
+			return true;
+		}
+		return false;
+	}
+
+	static boolean isBaseType(Field f) {
+		Class&lt;?&gt; type = f.getType();
+		if (type.isPrimitive()) {
+			return true;
+		}
+		if (type.getName().startsWith(&quot;java.lang&quot;) || Date.class.equals(type) || BigDecimal.class.equals(type) || byte[].class.equals(type)
+				|| int[].class.equals(type) || int[].class.equals(type) || double[].class.equals(type)) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * Object 转 Map,支持对象嵌套，对象中不支持Map类型
+	 */
+	@SuppressLint(&quot;NewApi&quot;)
+	@SuppressWarnings(&quot;unchecked&quot;)
+	public static Map&lt;String, Object&gt; objectToMap(Object obj) {
+		ArrayMap&lt;String, Object&gt; map = new ArrayMap&lt;String, Object&gt;();
+		Field[] fields = getFields(obj.getClass());
+		for (Field f : fields) {
+			if (isSkip(f)) {
+				continue;
+			}
+			f.setAccessible(true);
+			Object value = getFieldValue(obj, f);
+			if (value != null) {
+				if (isBaseType(f)) {
+					map.put(f.getName(), value);
+				} else if (List.class.isAssignableFrom(f.getType())) {// List类型
+					List&lt;Map&lt;String, Object&gt;&gt; result = transListToMapList((List&lt;Object&gt;) value, f);
+					if (result != null &amp;&amp; !result.isEmpty()) {
+						map.put(f.getName(), result);
+					}
+				} else {
+					map.put(f.getName(), objectToMap(value));
+				}
+			}
+		}
+		return map;
+	}
+
+	static List&lt;Map&lt;String, Object&gt;&gt; transListToMapList(List&lt;Object&gt; list, Field f) {
+		List&lt;Map&lt;String, Object&gt;&gt; result = new ArrayList&lt;Map&lt;String, Object&gt;&gt;();
+		Type fc = f.getGenericType();
+		if (fc == null) {
+			return null;
+		}
+		Class&lt;?&gt; parameterizedType = getParameterizedType(fc);
+		if (parameterizedType != null) {
+			for (int i = 0; i &lt; list.size(); i++) {
+				Object obj = list.get(i);
+				if (parameterizedType.isAssignableFrom(obj.getClass())) {
+					result.add(objectToMap(obj));
+				}
+			}
+		}
+		return result;
+	}
+}
+</code></pre></div><h6 id="示例四-madiallphone-java-通过解析hybridstr并在coreplugin使用反射技术来执行的插件示例">示例四 MADiallPhone.java (通过解析hybridStr并在CorePlugin使用反射技术来执行的插件示例)</h6> <div class="language- extra-class"><pre><code>注意:此文件应位于工程项目包名下的plugin目录中
+
+package cn.com.n22.prd.plugin;
+
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.text.TextUtils;
+
+import org.apache.cordova.CallbackContext;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import cn.com.n22.prd.MainActivity;
+import cn.com.n22.prd.uiInterface.MAInterface;
+
+/**
+ * Created by zhanxiaolin-n22 on 2018/1/17.
+ */
+
+public class MADiallPhone implements MAInterface {
+
+    private MainActivity activity;
+    private CallbackContext mCallbackContext;
+
+    /**
+     * h5与原生的回调方法
+     * @param callbackContext  回调
+     * @param context activity
+     * @param args h5页面可传参 需配置
+     */
+    private void invokeDiallPhone(final CallbackContext callbackContext, final Context context, String args) {
+        activity = (MainActivity) context;
+        mCallbackContext = callbackContext;
+        if(!TextUtils.isEmpty(args)){
+            JSONObject json = null;
+            try {
+                json = new JSONObject(args);
+                diallPhone(json.getString(&quot;url&quot;));
+            } catch (JSONException e) {
+                callbackContext.error(e.getMessage());
+            }
+        }
+    }
+
+    @Override
+    public void onAfterApplyAllPermission(int requestCode) {
+
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+
+    }
+
+    /**
+     * 拨打电话（跳转到拨号界面，用户手动点击拨打）
+     *
+     * @param phoneNum 电话号码
+     */
+    public void diallPhone(String phoneNum) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        Uri data = Uri.parse(&quot;tel:&quot; + phoneNum);
+        intent.setData(data);
+        activity.startActivity(intent);
+    }
+}
+
+关联类一:
+package cn.com.n22.prd.uiInterface;
+
+import android.content.Intent;
+
+/**
+ * 作者：wwl on 2017/8/2 16：40.
+ * 邮箱：wwl198800@163.com
+ * 电话：18600868377
+ */
+
+public interface ActivityResultBackInterface {
+
+  /**
+   * 处理onActivityResult回调
+   */
+  void onActivityResult(int requestCode, int resultCode, Intent intent);
+
+}
+
+关联类二:
+package cn.com.n22.prd.uiInterface;
+
+/**
+ * 作者：wwl on 2017/8/2 16：37.
+ * 邮箱：wwl198800@163.com
+ * 电话：18600868377
+ */
+
+public interface PermissionInterface {
+
+  /**
+   * 申请所有权限之后的逻辑
+   */
+  void onAfterApplyAllPermission(int requestCode);
+
+}
+
+关联类三:
+package cn.com.n22.prd.uiInterface;
+
+/**
+ * 作者：wwl on 2017/7/25 17：28.
+ * 邮箱：wwl198800@163.com
+ * 电话：18600868377
+ */
+public interface MAInterface extends PermissionInterface, ActivityResultBackInterface {
+
+}
+</code></pre></div><h5 id="_4-交互部分编写-www-xxxjs">4.交互部分编写(www/xxxjs)</h5> <div class="language- extra-class"><pre><code>/* 此交互js可公共使用
+ * hybridStr 调用原生事例
+ * MABjCaPlugin 为 业务类 类名
+ * 202 方法ID
+ * showSignMutiViewWithInfo 为方法名
+ * ?问号后面为方法参数 
+ * var hybridStr = 'hybrid://MABjCaPlugin:202/showSignMutiViewWithInfo?{\&quot;paramters\&quot;:\&quot;hello\&quot;}';
+ * CorePlugin.hybridCallAction(hybridStr, successBlock, failBlock);
+ * //调用插件 成功返回
+ * function successBlock(result){
+ * 	console.log(result);
+ * }
+ * //调用插件 失败返回
+ * function failBlock(errorStr){
+ *	console.log(errorStr);
+ * }
+ */
+var exec = require('cordova/exec');
+
+var CorePlugin = {
+    hybridCallAction:function(hybridStr,successBlock,failBlock) {
+        exec(successBlock, failBlock, &quot;CorePlugin&quot;, &quot;callNative&quot;, [hybridStr]);
+    }
+};
+module.exports = CorePlugin;
+</code></pre></div><h5 id="_5-配置文件修改-plugin-xml">5.配置文件修改(plugin.xml)</h5> <div class="language- extra-class"><pre><code>&lt;?xml version='1.0' encoding='utf-8'?&gt;
+&lt;plugin 
+		id=&quot;cordova-plugin-n22-CorePlugin&quot; 
+		version=&quot;1.0.0&quot; 
+		xmlns=&quot;http://apache.org/cordova/ns/plugins/1.0&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;
+	&lt;!--插件名称--&gt;	    
+	&lt;name&gt;CorePlugin&lt;/name&gt;
+	&lt;!--插件描述--&gt;	
+    &lt;description&gt;A cordova plugin, a JS version of n22 SDK&lt;/description&gt;
+    &lt;keywords&gt;cordova,n22&lt;/keywords&gt;
+    &lt;js-module name=&quot;CorePlugin&quot; src=&quot;www/CorePlugin.js&quot;&gt;
+		&lt;!--H5或js通过它去调用js中间件（插件）中定义的方法--&gt;
+        &lt;clobbers target=&quot;CorePlugin&quot; /&gt;
+    &lt;/js-module&gt;
+    &lt;!-- platform：支持的平台 android --&gt;
+    &lt;platform name=&quot;android&quot;&gt;
+		&lt;!--插件的配置信息，build的时候会添加到res/xml/config.xml 文件中--&gt;
+        &lt;config-file target=&quot;res/xml/config.xml&quot; parent=&quot;/*&quot;&gt;
+            &lt;feature name=&quot;CorePlugin&quot;&gt;
+                &lt;param name=&quot;android-package&quot; value=&quot;org.apache.cordova.n22.CorePlugin&quot;/&gt;
+            &lt;/feature&gt;
+        &lt;/config-file&gt;
+		&lt;source-file src=&quot;src/android/CorePlugin.java&quot; target-dir=&quot;src/org/apache/cordova/n22&quot; /&gt;
+		&lt;source-file src=&quot;src/android/ReflectUtil.java&quot; target-dir=&quot;src/org/apache/cordova/n22&quot; /&gt;
+    &lt;/platform&gt;
+&lt;/plugin&gt;
+</code></pre></div><h5 id="编译插件">编译插件</h5> <div class="language- extra-class"><pre><code>npm init
+</code></pre></div><h4 id="二、cordova插件安装使用">二、Cordova插件安装使用</h4> <h5 id="_1-安装插件">1.安装插件</h5> <div class="language- extra-class"><pre><code>插件列表: cordova plugin ls
+安装插件: cordova plugin add xxx
+卸载插件: cordova plugin rm xxx
+</code></pre></div><h5 id="_2-h5调用">2.H5调用</h5> <div class="language- extra-class"><pre><code>H5中使用:
+/* 此交互js可公共使用
+ * hybridStr 调用原生事例
+ * MADiallPhone 为 业务类 类名
+ * 202 方法ID
+ * invokeDiallPhone 为方法名
+ * ?问号后面为方法参数 
+ * var hybridStr = 'hybrid://MADiallPhone:202/invokeDiallPhone?{\&quot;paramters\&quot;:\&quot;hello\&quot;}';
+ * CorePlugin.hybridCallAction(hybridStr, successBlock, failBlock);
+ * //调用插件 成功返回
+ * function successBlock(result){
+ * 	console.log(result);
+ * }
+ * //调用插件 失败返回
+ * function failBlock(errorStr){
+ *	console.log(errorStr);
+ * }
+ */
+var hybridStr = 'hybrid://MADiallPhone:202/invokeDiallPhone?{\&quot;url\&quot;:\&quot;15321776071\&quot;}';
+CorePlugin.hybridCallAction(hybridStr,function(data){
+	alert(data)
+},function(error){
+	alert(error)
+})
+</code></pre></div><h5 id="_3-编译原生包">3.编译原生包</h5> <div class="language- extra-class"><pre><code>编译项目: cordova build android (指定平台)
+</code></pre></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2022/9/4 10:03:11</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-ac050c62></ul></main></div> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----></div></div>
+    <script src="/assets/js/app.d92d9752.js" defer></script><script src="/assets/js/3.1199aef7.js" defer></script><script src="/assets/js/1.accea1c2.js" defer></script><script src="/assets/js/22.3ff481b9.js" defer></script>
+  </body>
+</html>
