@@ -1,0 +1,18 @@
+name: push-2-oss
+on: [push]
+jobs:
+  auto-push-2-oss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: install & build 
+        run: npm install && npm run build
+      - name: push public oss
+        uses: OSpoon/auto-push-oss@master
+        with:
+          root: ./public
+          bucket: it200
+          region: oss-cn-beijing
+          accessKeyId: ${{secrets.accessKeyId}}
+          accessKeySecret: ${{secrets.accessKeySecret}}
