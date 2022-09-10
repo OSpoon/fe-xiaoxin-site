@@ -11,7 +11,7 @@ jobs:
       - name: push public oss
         uses: OSpoon/auto-push-oss@main
         with:
-          root: ./public
+          root: public
           bucket: ittemp
           region: oss-cn-beijing
           accessKeyId: ${{secrets.accessKeyId}}
