@@ -47,7 +47,7 @@ module.exports = {
         "items": [
           {
             "text": "GitHub",
-            "link": "https://github.com/OSpoon",
+            "link": "https://github.com/OSpoon/fe-xiaoxin-site",
             "icon": "reco-github"
           }
         ]
