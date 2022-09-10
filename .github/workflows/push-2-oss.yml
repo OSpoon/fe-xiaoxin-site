@@ -9,7 +9,7 @@ jobs:
       - name: install & build 
         run: npm install && npm run build
       - name: push public oss
-        uses: OSpoon/auto-push-oss@master
+        uses: OSpoon/auto-push-oss@main
         with:
           root: ./public
           bucket: it200
