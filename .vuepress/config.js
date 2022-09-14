@@ -36,6 +36,11 @@ module.exports = {
         "link": "/timeline/", 
         "icon": "reco-date",
       },
+      {
+        "text": "编程导航",
+        "icon": "reco-api",
+        "link": "https://vp.it200.cn/",
+      },
       { 
         "text": "必看", 
         "link": "/myself/", 
