@@ -5,8 +5,6 @@
 
 ## 社区颁发的证书
 
-> InfoQ 三期签约博主的礼品在路上~
-
 <div align=center>
     <img src="/material/681662709907_.pic.jpg" width = "50%" height = "50%" align=left />
     <img src="/material/691662709907_.pic.jpg" width = "50%" height = "50%" 
@@ -82,3 +80,13 @@
     <img src="/material/871662709912_.pic.jpg" width = "50%" height = "50%" align=left />
     <img src="/material/881662709913_.pic.jpg" width = "50%" height = "50%" align=right/>
 </div>
+
+***
+
+<div align=center>
+    <img src="/material/7bb964d23d6880da9c6628fa6010c3f.jpg" width = "30%" height = "30%" align=left />
+    <img src="/material/751ad23672b91770fa254e332bb1990.jpg" width = "30%" height = "30%" align=center />
+    <img src="/material/4967b7eed6a52184d457744709e1990.jpg" width = "30%" height = "30%" align=right />
+</div>
+
+***
