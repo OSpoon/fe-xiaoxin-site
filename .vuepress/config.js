@@ -38,34 +38,8 @@ module.exports = {
       },
       {
         "text": "编程导航",
+        "link": "/navigate/",
         "icon": "reco-api",
-        "items": [
-          {
-            "text": "VP.IT200",
-            "link": "https://vp.it200.cn/",
-            "icon": "reco-tag"
-          },
-          {
-            "text": "ProcessOn",
-            "link": "https://www.processon.com/diagrams",
-            "icon": "reco-tag"
-          },
-          {
-            "text": "Canva",
-            "link": "https://www.canva.cn/",
-            "icon": "reco-tag"
-          },
-          {
-            "text": "ASTExplorer",
-            "link": "https://astexplorer.net/",
-            "icon": "reco-tag"
-          },
-          {
-            "text": "Regex101",
-            "link": "https://regex101.com/",
-            "icon": "reco-tag"
-          }
-        ]
       },
       { 
         "text": "必看", 
