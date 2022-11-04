@@ -21,6 +21,9 @@ module.exports = {
         "name": "viewport",
         "content": "width=device-width,initial-scale=1,user-scalable=no"
       },
+    ],
+    [
+      "meta",
       {
         "name": "referrer",
         "content": "never"
@@ -35,9 +38,9 @@ module.exports = {
         "link": "/",
         "icon": "reco-home"
       },
-      { 
-        "text": "时间轴", 
-        "link": "/timeline/", 
+      {
+        "text": "时间轴",
+        "link": "/timeline/",
         "icon": "reco-date",
       },
       {
@@ -45,9 +48,9 @@ module.exports = {
         "link": "/navigate/",
         "icon": "reco-api",
       },
-      { 
-        "text": "必看", 
-        "link": "/myself/", 
+      {
+        "text": "必看",
+        "link": "/myself/",
         "icon": "reco-other",
       },
       {
