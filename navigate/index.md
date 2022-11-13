@@ -97,6 +97,13 @@
           href: 'https://caniuse.com/',
           description: 'web browser compatibility support html css svg html5 css3 opera chrome firefox safari internet explorer',
         },
+        {
+          uuid:'c7ec24d1-9fab-4dfa-a38f-dda818946752',
+          title: 'Nginx Edit',
+          icon: 'https://www.nginxedit.cn/assets/img/favicon.png',
+          href: 'https://www.nginxedit.cn/',
+          description: '配置高性能，安全和稳定的NGINX服务器的最简单方法',
+        }
     ]"
 />
 
