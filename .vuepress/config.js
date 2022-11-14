@@ -54,6 +54,11 @@ module.exports = {
         "icon": "reco-other",
       },
       {
+        "text": "RSS",
+        "link": "https://it200.cn/rss.xml",
+        "icon": "reco-bokeyuan"
+      },
+      {
         "text": "关于",
         "icon": "reco-message",
         "items": [
@@ -161,6 +166,11 @@ module.exports = {
           "src": '/wx_code.png'
         }
       ]
+    }],
+    ['@vuepress-reco/vuepress-plugin-rss', {
+      site_url: "https://it200.cn/",
+      copyright: 'IT200.cn',
+      count: 10,
     }]
   ]
 }
