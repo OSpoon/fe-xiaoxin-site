@@ -103,6 +103,13 @@
           icon: 'https://www.nginxedit.cn/assets/img/favicon.png',
           href: 'https://www.nginxedit.cn/',
           description: '配置高性能，安全和稳定的NGINX服务器的最简单方法',
+        },
+        {
+          uuid:'a9cd212f-12df-475a-99cf-f3ecf05ce30a',
+          title: 'QuickRef.ME',
+          icon: 'https://quickref.me/images/favicon.png',
+          href: 'https://quickref.me/',
+          description: 'Here are some cheatsheets and quick references contributed by open source angels.',
         }
     ]"
 />
