@@ -70,6 +70,13 @@
           description: 'regex101: build, test, and debug regex',
         },
         {
+          uuid:'27189dc3-40b5-4dbc-a5fc-3bd442832f55',
+          title: 'Jex.im',
+          icon: 'https://jex.im/favicon.ico',
+          href: 'https://jex.im/regulex/',
+          description: 'JavaScript Regular Expression Visualizer.',
+        },
+        {
           uuid:'c52d3a92-a8b8-4cac-9e3a-77877058f125',
           title: 'AST Explorer',
           icon: 'https://astexplorer.net/favicon.png',
