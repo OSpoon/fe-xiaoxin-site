@@ -157,6 +157,7 @@ module.exports = {
     "valineConfig": {
       "appId": "qVZiiwT0KyuXAmrQEZIUnmOd-gzGzoHsz",
       "appKey": "Rb5flNCY63vstNSiMOyuddTe",
+      "showComment": false
     }
   },
   "markdown": {

@@ -23,3 +23,17 @@ features:
 - title: Tomorrow
   details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长
 ---
+
+<script setup>
+import { onMounted } from 'vue'
+  onMounted(() => {
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'IT200-OSpoon/it200.cn'
+    };
+    const script=document.createElement('script');
+    script.src='https://sidecar.gitter.im/dist/sidecar.v1.js';
+    script.defer = true;
+    script.async = true;
+    document.head.appendChild(script);
+  })
+</script>
