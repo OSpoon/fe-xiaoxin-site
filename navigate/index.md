@@ -117,6 +117,20 @@
           icon: 'https://quickref.me/images/favicon.png',
           href: 'https://quickref.me/',
           description: 'Here are some cheatsheets and quick references contributed by open source angels.',
+        },
+        {
+          uuid:'19f24237-946c-4c9f-a5dc-044a30504e14',
+          title: 'snippet generator',
+          icon: 'https://snippet-generator.app/favicon-32x32.png',
+          href: 'https://snippet-generator.app/',
+          description: 'snippet generator',
+        },
+        {
+          uuid:'58a4ec8e-5c69-4009-8abb-7784f62dd5cc',
+          title: 'Transform Tools',
+          icon: 'https://transform.tools/static/favicon.png',
+          href: 'https://transform.tools/',
+          description: 'Transform Tools',
         }
     ]"
 />
@@ -381,6 +395,27 @@
             href: 'https://tailwindcss.com/',
             description: 'Rapidly build modern websites without ever leaving your HTML.',
         },
+        {
+          uuid:'f5358896-a99c-460c-ac68-298b73ffbf6c',
+          title: 'pixijs',
+          icon: 'https://pixijs.com/images/favicon.png',
+          href: 'https://pixijs.com/',
+          description: 'The HTML5 Creation Engine',
+        },
+        {
+          uuid:'21b4e3b3-5753-4fbd-be1e-8b3fd757362c',
+          title: 'GreenSock',
+          icon: 'https://greensock.com/uploads/monthly_2018_06/favicon.ico.4811a987b377f271db584b422f58e5a7.ico',
+          href: 'https://greensock.com/',
+          description: 'The standard for modern web animation',
+        },
+        {
+          uuid:'8c51d0fe-77a5-476b-aaf5-cef7b7b8d051',
+          title: 'Threejs',
+          icon: 'https://threejs.org/files/favicon.ico',
+          href: 'https://threejs.org/',
+          description: 'JavaScript 3D Library',
+        }
     ]"
 />
 
