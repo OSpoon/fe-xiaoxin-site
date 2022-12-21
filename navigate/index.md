@@ -131,6 +131,13 @@
           icon: 'https://transform.tools/static/favicon.png',
           href: 'https://transform.tools/',
           description: 'Transform Tools',
+        },
+        {
+          uuid:'1c1ee3ee-d944-4698-91a5-a7c864eaf5d5',
+          title: '即时设计',
+          icon: 'https://img.js.design/assets/webImg/favicon.ico',
+          href: 'https://js.design/workspace',
+          description: '即时设计是一款在线可协作的UI设计工具，是可协作的在线sketch、国内版figma，拥有海量的设计资源与素材，支持导入sketch格式的源文件。支持创建交互原型、获取设计标注、快速切图、团队协作等工作。',
         }
     ]"
 />
