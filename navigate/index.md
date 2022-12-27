@@ -41,6 +41,13 @@
           description: 'Helloworld是全球知名中文IT技术交流平台,创建于2018年,包含原创博客、精品专栏、职业培训、技术教程、资源共享等产品服务,提供原创、优质、完整内容的专业IT技术开发社区。',
         },
         {
+          uuid:'f0d620f2-5161-4cec-b18a-6098554c5602',
+          title: 'mdnice',
+          icon: 'https://www.mdnice.com/favicon.svg',
+          href: 'https://www.mdnice.com/',
+          description: '墨滴,markdown 编辑器,mdnice,技术',
+        },
+        {
           uuid:'cc1f4d63-757a-4096-b3a8-e7c54109433a',
           title: 'carbon',
           icon: 'https://carbon.now.sh/favicon.ico',
