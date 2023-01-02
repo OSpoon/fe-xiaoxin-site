@@ -172,7 +172,7 @@ module.exports = {
       "body": [
         {
           "type": 'title',
-          "content": '初次见面加个好友吧 🎉🎉🎉',
+          "content": '实用性前端技术分享',
           "style": 'text-aligin: center;font-size: 15px;'
         },
         {
