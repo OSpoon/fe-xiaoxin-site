@@ -48,6 +48,13 @@
           description: '墨滴,markdown 编辑器,mdnice,技术',
         },
         {
+          uuid:'a9be6872-a65c-48ad-9d2d-fc4f30e1b6d1',
+          title: '1024code',
+          icon: 'https://1024-staging-1258723534.cos.ap-guangzhou.myqcloud.com/avatar/logo-transparent.png',
+          href: 'https://1024code.com/',
+          description: '1024Code 是一个免费的、协作式的、基于浏览器的 IDE 环境，支持 10 多种编程语言，支持 Spring 、Vue 、React 等框架，还支持很多图形库，是刚入门的程序员学习编程，与朋友一起创造作品，分享交流的最佳选择。',
+        },
+        {
           uuid:'cc1f4d63-757a-4096-b3a8-e7c54109433a',
           title: 'carbon',
           icon: 'https://carbon.now.sh/favicon.ico',
