@@ -164,6 +164,9 @@ module.exports = {
     "lineNumbers": true,
     "anchor": { "permalink": false },
     "toc": { "includeLevel": [1, 2] },
+    extendMarkdown: md => {
+      md.use(require('./plugins/mk-plugin-iframe'))
+    }
   },
   "plugins": [
     ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
